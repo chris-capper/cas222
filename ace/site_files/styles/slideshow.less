@@ -1,0 +1,126 @@
+@import 'palette.less';
+
+* {
+	box-sizing: border-box;
+}
+.slideshow-container {
+    width: 100%;
+	position: relative;
+	margin: auto;
+}
+.mySlides {
+	display: none;
+}
+
+.prev {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: @lightColor;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: @lightColor;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev {
+	&:hover {
+		background-color: @darkColor;
+	}
+}
+.next {
+	&:hover {
+		background-color: @darkColor;
+	}
+}
+.text {
+	color: @lightColor;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+.numbertext {
+	color: @lightColor;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: @darkColor;
+	border-radius: 50%;
+	display: inline-block;
+    transition: background-color 0.6s ease;
+    
+}
+
+.active {
+	background-color: @darkColor;
+}
+
+.dot {
+	&:hover {
+		background-color: @color1;
+    }
+    &:visited {
+        background-color: @color1;
+    }
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2.5s;
+	animation-name: fade;
+	animation-duration: 2.5s;
+}
+
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .0;
+    }
+	to {
+		opacity: 1;
+    }
+
+}
+@keyframes fade {
+	from {
+		opacity: .0;
+    }
+	to {
+		opacity: 1;
+    }
+
+}
