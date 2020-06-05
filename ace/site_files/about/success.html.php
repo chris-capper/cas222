@@ -15,11 +15,13 @@
         <main>
             <div class="contact-box">
             <h2>Success!</h2>
-                <p>Thanks for contacting us! Here's what you sent:<br>
-                    Name: <?php echo htmlspecialchars($myName, ENT_QUOTES, 'UTF-8'); ?><br>
-                    Email: <?php echo htmlspecialchars($myEmail, ENT_QUOTES, 'UTF-8'); ?><br>
-                    Question: <?php echo htmlspecialchars($myQuestion, ENT_QUOTES, 'UTF-8'); ?><br>
+                <p>Thanks for contacting us! Here's what you sent:<br />
+                    Name: <?php echo htmlspecialchars($myName, ENT_QUOTES, 'UTF-8'); ?><br />
+                    Email: <?php echo htmlspecialchars($myEmail, ENT_QUOTES, 'UTF-8'); ?><br />
+                    Role: <?php echo htmlspecialchars($myRole, ENT_QUOTES, 'UTF-8'); ?><br />
+                    Question: <?php echo htmlspecialchars($myQuestion, ENT_QUOTES, 'UTF-8'); ?>
                 </p>
+                <p>We'll be in touch soon!</p>
             </div>
         </main>
         <?php include '../includes/footer.inc.html.php' ?>

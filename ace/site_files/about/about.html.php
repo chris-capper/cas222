@@ -28,6 +28,12 @@
                     <input type="text" id="myName" name="myName" required="required"><br>
                     <label for="myEmail">E-mail: </label>
                     <input type="email" id="myEmail" name="myEmail" required="required"><br>
+                    <label for="myRole">Role:</label>
+                        <select size="1" name="myRole" id="myRole" required>
+                            <option>Please choose one.</option>
+                            <option value="Athlete">Athlete</option>
+                            <option value="Volunteer">Volunteer</option>
+                        </select><br>
                     <label for="myQuestion">Comments: </label>
                     <textarea name="myQuestion" id="myQuestion" rows="5" cols="50" required="required"></textarea><br>
                     <input id="contactsubmit" type="submit" value="Send">
