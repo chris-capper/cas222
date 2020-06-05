@@ -25,6 +25,7 @@ if (isset($_POST['myName'])) {
         $mail->Body = <<<EOT
 Email: $myEmail <br>
 Name: $myName <br>
+Role: $myRole <br>
 Message: $myQuestion
 EOT;
 
